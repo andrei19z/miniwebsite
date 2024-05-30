@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>miami</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="date"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+.buton-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px; 
+    border: 2px solid #007bff; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.buton-home:hover {
+    background-color: #0056b3; 
+    color: #fff; 
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Radisson Resort Miami Beach</h1>
+    <a href="homepage.html" class="buton-home">Home</a>
+</header>
+
+<div class="container">
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>Lângă Fontainebleau stați într-una din 216 camere cu televizoare inteligente. Accesul gratuit la internet wireless vă menține conectat, iar programarea prin cablu este disponibilă pentru divertisment. Băile private au articole de toaletă gratuite și uscător de păr. Facilitățile includ seifuri și birouri compatibile cu laptopuri, precum și telefoane cu apeluri locale gratuite. Situat în Miami Beach (Mid Beach), Radisson Resort Miami Beach se află la 5 minute de mers pe jos de Fontainebleau și la 5 minute de mers cu mașina de Miami Beach. promenadă.</p>
+        <img src="https://four-points-by-sheraton-miami-beach.miamibeachfl-hotel.com/data/Photos/OriginalPhoto/15258/1525865/1525865953/miami-beach-four-points-by-sheraton-hotel-33140-photo-15.JPEG" alt="Hotel Exterior">
+    </section>
+
+    <section id="facilities">
+        <h2>Facilities</h2>
+        <ul>
+            <li>Rooms with stunning sea view balconies</li>
+            <li>Outdoor swimming pool</li>
+            <li>Spa and wellness center</li>
+            <li>Multiple dining options offering international cuisines</li>
+            <li>Conference and meeting rooms</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="image-gallery">
+            <img src="https://four-palms-miami-beach.hotelmix.ro/data/Photos/OriginalPhoto/15258/1525866/1525866097/Radisson-Resort-Miami-Beach-Exterior.JPEG" alt="">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/63/94/67/2-queen-beds-oceanfront.jpg?w=1100&h=-1&s=1" alt="">
+            <img src="https://four-palms-miami-beach.hotelmix.ro/data/Photos/OriginalPhoto/11266/1126619/1126619430/Radisson-Resort-Miami-Beach-Exterior.JPEG" alt="">
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Stay</h2>
+        <form>
+            <label for="check-in-date">Check-in Date:</label>
+            <input type="date" id="check-in-date" name="check-in-date" required>
+
+            <label for="check-out-date">Check-out Date:</label>
+            <input type="date" id="check-out-date" name="check-out-date" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit">Check Availability</button>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotelio - Book Your Dream Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="proiectulewdcss.css"/>
+  <form action="checklogin.php" method="post">
+  <style>
+	   body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://images.wallpapersden.com/image/download/maldives-beach_bG1namaUmZqaraWkpJRnZ2VlrWZnaGs.jpg);
+  background-size: cover;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  margin-right: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+header li:hover {
+  background-color: #555;
+}
+
+.features {
+  background-color: whitesmoke;
+  padding: 4rem;
+  text-align: center;
+}
+
+.features ul {
+  list-style: none;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features li {
+  flex-basis: 30%;
+  text-align: left;
+}
+
+.features i {
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.features h3 {
+  color: #000000;
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.features p {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.popular-hotels {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  float: left;
+}
+
+.popular-hotels ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  float: left;
+}
+
+.popular-hotels li {
+  flex-basis: 30%;
+  text-align: left;
+  transition: transform 0.3s ease;
+  float: left;
+}
+
+.popular-hotels li:hover {
+  transform: translateY(-10px);
+}
+
+.popular-hotels img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  float: left;
+}
+
+.popular-hotels img:hover {
+  transform: scale(1.1);
+}
+
+.popular-hotels h3 {
+  color: #333;
+  font-size: 2rem;
+  margin: 1rem 0;
+  float: left;
+}
+
+.popular-hotels p {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .features li,
+  .popular-hotels li {
+    flex-basis: 45%;
+  }
+
+  .hero form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .features li,
+  .popular-hotels li {
+    flex-basis: 100%;
+  }
+
+  .hero form {
+    width: 100%;
+  }
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 2rem;
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+nav li:hover {
+  background-color: #555;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.wallpapersden.com/image/download/maldives-beach_bG1namaUmZqaraWkpJRnZ2VlrWZnaGs.jpg');
+    background-size: cover;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  nav li:hover {
+    background-color: #555;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-menu.show {
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav li {
+      margin: 0;
+    }
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.left-buttons button {
+    margin-right: 10px;
+    background-color: #555;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.left-buttons button:hover {
+    background-color: #c42020;
+}
+ .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="left-buttons">
+      <div class="dropdown">
+    <button class="dropbtn">Mai multe</button>
+    <div class="dropdown-content">
+        <a href="despre noi.html">About Us</a>
+    </div>
+      </select>
+  </div>
+      
+    
+  </header>
+  
+    <section class="features">
+      <h1>WELCOME TO HOTELIO</h1>
+      <ul>
+        <li>
+          <i class="fas fa-globe"></i>
+          <h3>Wide Range of Options</h3>
+          <p>From luxury hotels to budget-friendly options, we have something for everyone</p>
+        </li>
+        <li>
+          <i class="fas fa-money-bill-wave"></i>
+          <h3>Competitive Prices</h3>
+          <p>We offer the best prices for your dream hotel</p>
+        </li>
+        <li>
+          <i class="fas fa-lock"></i>
+          <h3>Secure Booking</h3>
+          <p>Your personal and payment information is safe with us</p>
+        </li>
+      </ul>
+    </section>
+    <section class="popular-hotels">
+      <h2>Popular Hotels</h2>
+      <ul>
+<ul>
+    <li>
+        <a href="hotel lemon.html">
+            <img src="https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/burj-al-arab-jumeirah/old-content/hero/burj-al-arab-profile-exterior_6-4_landscape.jpg?h=800&w=1200&modified=20230522053739" alt="Hotel 1">
+            <h3>Lemon Tree Hotel, Jumeirah Dubai</h3>
+            <p>Starting from $100 per night</p>
+        </a>
+    </li>
+    <li>
+        <a href="hotel miami.html">
+            <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fit,w_1440,h_900/crm/miamifl/RadissonMB_010_Exterior_West_1_2E964481-D809-4671-8EDD1A59483853C8_d60e3345-6f5b-4801-b4c0cd5387d57356.jpg" alt="Hotel 2">
+            <h3>Radisson Resort Miami Beach</h3>
+            <p>Starting from $150 per night</p>
+        </a>
+    </li>
+    <li>
+        <a href="hotel las vegas.html">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/best-hotels-in-dubai-1634849657.jpeg" alt="Hotel 3">
+            <h3>Hotel Casino Plaza Las Vegas</h3>
+            <p>Starting from $200 per night</p>
+        </a>
+    </li>
+</ul>
+
+    </section>
+  <footer>
+    <p>&copy; 2023 Hotelio. All Rights Reserved.</p>
+  </footer>
+		
+		<script src="script.js">
+    const form = document.getElementById("search-form");
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  const destination = document.getElementById("destination").value;
+  const checkIn = document.getElementById("check-in").value;
+  const checkOut = document.getElementById("check-out").value;
+  console.log("Destination: " + destination);
+  console.log("Check-in: " + checkIn);
+  console.log("Check-out: " + checkOut);
+});
+function toggleMenu() {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.toggle("show");
+}
+function toggleMenu() {
+    const navMenu = document.getElementById("nav-menu");
+    navMenu.classList.toggle("show");
+  }
+  </script>
+</body>
+</html>
+	</body>
+</html>
